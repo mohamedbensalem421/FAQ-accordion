@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Work+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <title>FAQ accordion</title>
+  </head>
+<body class="grid place-content-center h-screen px-[15px] bg-[#f9f0ff] relative">
+  <div class="background absolute h-[250px] w-full top-0"></div>
+    <div class="container p-[15px] md:p-[30px] md:w-[600px] z-10 bg-white rounded-[10px]">
+      <h1 class="text-5xl text-[#2f1533] flex gap-4 font-bold pb-5"><img src="./images/icon-star.svg" alt=""> FAQs</h1>
+      <div class="border-solid border-b-[1px] border-gray-100 py-[15px]">
+        <div class="group button flex items-center justify-between cursor-pointer">
+          <h2 class="font-bold text-[#2f1533] w-[65%] group-hover:text-[#9F40E3]">What is Frontend Mentor, and how will it help me?</h2>
+          <div class="plus"></div>
+        </div>
+        <p class="text-[#8c6991] py-[15px] hidden">Frontend Mentor offers realistic coding challenges to help developers improve their frontend coding skills with projects in HTML, CSS, and Javascript. it's suitable for all levels and idea for portfolio building.</p>
+      </div>
+      <div class="border-solid border-b-[1px] border-gray-100 py-[15px]">
+        <div class="group button flex items-center justify-between cursor-pointer">
+          <h2 class="font-bold text-[#2f1533] w-[65%] group-hover:text-[#9F40E3]">Is Frontend Mentor free?</h2>
+          <div class="plus"></div>
+        </div>
+        <p class="text-[#8c6991] py-[15px] hidden">Frontend Mentor offers realistic coding challenges to help developers improve their frontend coding skills with projects in HTML, CSS, and Javascript. it's suitable for all levels and idea for portfolio building.</p>
+      </div>
+      <div class="border-solid border-b-[1px] border-gray-100 py-[15px]">
+        <div class="group button flex items-center justify-between cursor-pointer">
+          <h2 class="font-bold text-[#2f1533] w-[65%] group-hover:text-[#9F40E3]">Can i use Frontend Mentor projects in my portfolio?</h2>
+          <div class="plus"></div>
+        </div>
+        <p class="text-[#8c6991] py-[15px] hidden">Frontend Mentor offers realistic coding challenges to help developers improve their frontend coding skills with projects in HTML, CSS, and Javascript. it's suitable for all levels and idea for portfolio building.</p>
+      </div>
+      <div class="border-solid border-b-[1px] border-gray-100 py-[15px]">
+        <div class="group button flex items-center justify-between cursor-pointer">
+          <h2 class="font-bold text-[#2f1533] w-[65%] group-hover:text-[#9F40E3]">How can i get help if i'm stuck on a challenge?</h2>
+          <div class="plus"></div>
+        </div>
+        <p class="text-[#8c6991] py-[15px] hidden">Frontend Mentor offers realistic coding challenges to help developers improve their frontend coding skills with projects in HTML, CSS, and Javascript. it's suitable for all levels and idea for portfolio building.</p>
+      </div>
+    </div>
+    <script>
+      let button = document.querySelectorAll(".button")
+      button.forEach( (ele) =>{
+        ele.onclick = function (){
+          ele.nextElementSibling.classList.toggle("hidden")
+          ele.lastElementChild.classList.toggle("active")
+        }
+      })
+    </script>
+    <!-- <script src="./main.js"></script> -->
+  </body>
+</html>
